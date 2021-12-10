@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: atfuser
+Build-Jdk: 1.7.0_51
+Baseline: EXA_PL21
+Class-Path: mlne-16A_1.0.jar mlcraft_platform-16A_1.0.jar ehcache-2.8.3.
+ jar exa-imcommon-2.1.0-SNAPSHOT.jar log4j-1.2.14.jar exa-common-2.1.0-S
+ NAPSHOT.jar commons-logging-1.0.4.jar quartz-1.5.1.jar commons-collecti
+ ons-3.1.jar commons-lang-2.1.jar hsqldb-1.8.0.1.jar exa-mediator-2.1.0-
+ SNAPSHOT.jar snmp4j-2.2.1.jar exa-client-2.1.0-SNAPSHOT.jar exa-bs-2.1.
+ 0-SNAPSHOT.jar js-1.0.jar jloox-3.4.0.0.jar jlayout-3.4.0.0.jar jetty-6
+ .1.18.jar jetty-util-6.1.18.jar servlet-api-2.5-20081211.jar swt-3.7.1-
+ gtk-solaris-x86.jar exa-mapdesigner-2.1.0-SNAPSHOT.jar exa-ssh-2.1.0-SN
+ APSHOT.jar maverick-sshd-1.2.7.jar jsch-0.1.28.jar exa-ftp-2.1.0-SNAPSH
+ OT.jar slf4j-api-1.7.12.jar slf4j-log4j12-1.7.12.jar commons-net-3.2.ja
+ r ftpserver-core-1.0.6.jar mina-core-2.0.4.jar exa-xc-2.1.0-SNAPSHOT.ja
+ r exa-snmp-2.1.0-SNAPSHOT.jar exa-sshclient-2.1.0-SNAPSHOT.jar maverick
+ -all-1.4.46.jar ui-2.0.0.jar maverick-util-2.0.0.jar terminal-common-aw
+ t-2.0.8.jar terminal-2.0.8.jar commons-logging-api-1.0.4.jar virtualses
+ sion-2.0.0.jar terminal-swing-2.0.8.jar sshapi-core-0.9.7.jar sshapi-ma
+ verick-0.9.7.jar oro-2.0.8.jar commons-cli-1.1.jar exa-cyberons-2.1.0-S
+ NAPSHOT.jar exa-xrpc-2.1.0-SNAPSHOT.jar commons-httpclient-3.0.jar juni
+ t-3.8.1.jar commons-codec-1.2.jar jfreechart-1.0.19.jar jcommon-1.0.23.
+ jar
+

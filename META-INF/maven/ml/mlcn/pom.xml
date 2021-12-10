@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+  <parent>
+     <artifactId>mlCraftParent</artifactId>                
+     <groupId>ml</groupId>
+     <version>16A_1.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <name>MLCN</name>
+  <artifactId>mlcn</artifactId>
+  <groupId>ml</groupId>
+  <version>16A_1.0</version>
+  <description>MLCN</description>
+  <packaging>jar</packaging>
+
+  <dependencies>
+  
+    <dependency>
+	   <groupId>ml</groupId>
+	   <type>jar</type>
+	   <artifactId>mlne</artifactId>
+	   <version>16A_1.0</version>
+    </dependency>
+    
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+          <debug>true</debug>
+          <optimize>true</optimize>
+          <showDeprecations>true</showDeprecations>
+        </configuration>
+      </plugin>
+      
+       <plugin>
+        <groupId>exa</groupId>
+        <artifactId>ia</artifactId>
+        <version>2.1.0-SNAPSHOT</version>
+        <configuration>
+        <installer>MINI-LINK_Craft</installer>
+        <installer_version>16A_1</installer_version>
+
+        <swlist>swlist.txt</swlist>
+        <swlist_ignore>true</swlist_ignore>
+
+        <buildCommand>c:/Program Files/Macrovision/InstallAnywhere 8.0 Enterprise/build.exe</buildCommand>
+        <template>MLCraft.iap_xml</template>
+
+        <brandedProductName>MINI-LINK Craft</brandedProductName>
+        <desktop>AXXCraft</desktop>
+        <client>NA</client>
+        <server>NA</server>
+
+    </configuration>
+  </plugin>
+      
+      
+    </plugins>
+  </build>
+   
+  <profiles>
+    <profile>
+      <id>test</id>
+	  <build>
+	    <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <configuration>
+	          <forkMode>once</forkMode>
+	          <skip>false</skip>
+	          <workingDirectory>${staging_location}/${workspace_id}/sw/java/bin</workingDirectory>
+	          <argLine>-enableassertions</argLine>
+	        </configuration>
+	      </plugin>
+	      <plugin>
+   	<groupId>org.codehaus.mojo</groupId>
+   	<artifactId>xml-maven-plugin</artifactId>
+   	<version>1.0-beta-3</version>
+   	<executions>
+   		<execution>
+   			<phase>validate</phase>
+   			<goals>
+   				<goal>validate</goal>
+   			</goals>
+   		</execution>
+   	</executions>
+   	<configuration>
+      <validationSets>
+      	<validationSet>
+          <dir>src/main/resources</dir>    
+          <includes>
+          	<include>**/*.ag</include>
+          	<include>**/*.xml</include>
+          </includes>          
+        </validationSet>
+        <validationSet>
+          <dir>src/main/resources</dir>
+          <systemId>..//..//../Settings/xml/form.xsd</systemId>
+          <includes>
+          	<include>**/*.form</include>
+          </includes>
+          
+        </validationSet>
+      </validationSets>
+    </configuration>
+
+   </plugin>
+	    </plugins>
+	  </build>
+    
+	  <reporting>
+	    <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-javadoc-plugin</artifactId>
+	      </plugin>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-report-plugin</artifactId>
+	      </plugin>
+	    </plugins>
+	  </reporting>
+  
+    </profile>
+  </profiles>
+</project>
+
+
+
+
+
+
+
